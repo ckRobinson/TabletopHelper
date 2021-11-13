@@ -38,13 +38,14 @@ class FloatingMenuModel: ObservableObject {
     @Published var buttonText: [String] = []
     @Published var buttonType: [DieType] = []
     
+    var popUpTitle: String = ""
+    var popUpResult: String = ""
     
     var hidePopupTimer: DispatchWorkItem?
     var waitToShowTimer: DispatchWorkItem?
     
-    private var rollResultPopup: RollResultPopupView = RollResultPopupView(title: "",
-                                                                   result: "",
-                                                                   popupClickedCallback: {})
+    private var rollResultPopupView: RollResultPopupView?
+    private var rollResultPopUpModel: RollResultPopUpModel?
     
     init() {
         for dieType in DieType.allCases {
@@ -55,35 +56,36 @@ class FloatingMenuModel: ObservableObject {
     
     func updatePopUp(die: DieType) {
         
-        let result: Int
-        let title: String
         switch die {
             case DieType.D20:
-                title = "1d20"
-                result = Int.random(in: 1...20)
+                self.popUpTitle = "1d20"
+                self.popUpResult = String(Int.random(in: 1...20))
             case DieType.D12:
-                title = "1d12"
-                result = Int.random(in: 1...12)
+                self.popUpTitle = "1d12"
+                self.popUpResult = String(Int.random(in: 1...12))
             case DieType.D10:
-                title = "1d10"
-                result = Int.random(in: 1...10)
+                self.popUpTitle = "1d10"
+                self.popUpResult = String(Int.random(in: 1...10))
             case DieType.D100:
-                title = "1d100"
-                result = Int.random(in: 1...100)
+                self.popUpTitle = "1d100"
+                self.popUpResult = String(Int.random(in: 1...100))
             case DieType.D8:
-                title = "1d8"
-                result = Int.random(in: 1...8)
+                self.popUpTitle = "1d8"
+                self.popUpResult = String(Int.random(in: 1...8))
             case DieType.D6:
-                title = "1d6"
-                result = Int.random(in: 1...6)
+                self.popUpTitle = "1d6"
+                self.popUpResult = String(Int.random(in: 1...6))
             case DieType.D4:
-                title = "1d4"
-                result = Int.random(in: 1...4)
+                self.popUpTitle = "1d4"
+                self.popUpResult = String(Int.random(in: 1...4))
         }
         
-        self.rollResultPopup = RollResultPopupView(title: title,
-                                               result: "\(result)",
-                                               popupClickedCallback: self.hidePopUp)
+        let model = self.getPopUpModel()
+        model.startTimer()
+        self.rollResultPopupView = RollResultPopupView(title: self.popUpTitle,
+                                                       result: self.popUpResult,
+                                                       model: model,
+                                                       popupClickedCallback: self.hidePopUp)
     }
     
     func displayPopUp(die: DieType) {
@@ -128,8 +130,27 @@ class FloatingMenuModel: ObservableObject {
         self.popUpDisplayed = false
     }
     
-    func getPopUp() -> () -> RollResultPopupView {
-        return { () -> RollResultPopupView in return self.rollResultPopup }
+    func getPopUpView() -> RollResultPopupView {
+        
+        guard let view = self.rollResultPopupView else {
+            let view = RollResultPopupView(title: self.popUpTitle,
+                                           result: self.popUpResult,
+                                           model: self.getPopUpModel(),
+                                           popupClickedCallback: self.hidePopUp)
+            self.rollResultPopupView = view
+            return view
+        }
+        
+        return view
+    }
+    
+    func getPopUpModel() -> RollResultPopUpModel {
+        guard let model = self.rollResultPopUpModel else {
+            let model = RollResultPopUpModel(timerSeconds: 3, hideCallback: self.hidePopUp)
+            self.rollResultPopUpModel = model
+            return model
+        }
+        return model
     }
     
     func getDieButtonView(dieType: DieType) -> some View {
@@ -213,7 +234,7 @@ struct FloatingMenu: View {
         .popup(isPresented: self.model.popUpDisplayed,
                alignment: .bottomLeading,
                direction: .bottom,
-               content: self.model.getPopUp())
+               content: self.model.getPopUpView)
     }
     
     func showMenu() {

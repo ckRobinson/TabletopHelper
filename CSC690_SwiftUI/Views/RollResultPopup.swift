@@ -11,8 +11,9 @@ class RollResultPopUpModel: ObservableObject {
 
     @Published var progress: CGFloat = 1.0
     
+    private var isTiming: Bool = true
     private var countdownTimer: CountdownTimer?
-
+    
     private var timer: Timer?
     private var runCount: CGFloat?
     private var maxCount: CGFloat?
@@ -33,7 +34,12 @@ class RollResultPopUpModel: ObservableObject {
         self.runCount = self.maxCount
         self.countdownTimer = CountdownTimer(model: self)
     }
-        
+    
+    func startTimer() -> Void {
+        self.runCount = maxCount
+        self.isTiming = true
+    }
+    
     func getTimer() -> CountdownTimer {
         guard let c = self.countdownTimer else {
             self.countdownTimer = CountdownTimer(model: self)
@@ -43,6 +49,10 @@ class RollResultPopUpModel: ObservableObject {
     }
     
     @objc func fireTimer(timer: Timer) {
+        
+        if self.isTiming == false {
+            return
+        }
         
         if var runCount = self.runCount,
            let maxCount = self.maxCount {
@@ -56,7 +66,9 @@ class RollResultPopUpModel: ObservableObject {
             
             print(progress)
             if runCount <= -0.03 {
-                timer.invalidate()
+                
+                    
+                self.isTiming = false
                 self.hideCallback()
             }
         }
@@ -71,13 +83,12 @@ struct RollResultPopupView: View {
     
     var popupModel: RollResultPopUpModel
     
-    init(title: String, result: String, popupClickedCallback: @escaping () -> Void) {
+    init(title: String, result: String, model: RollResultPopUpModel, popupClickedCallback: @escaping () -> Void) {
         self.rollTitle = title
         self.result = result
         
         self.popupClickedCallback = popupClickedCallback
-        
-        popupModel = RollResultPopUpModel(timerSeconds: 3, hideCallback: popupClickedCallback)
+        self.popupModel = model
     }
 
     var body: some View {
@@ -108,11 +119,11 @@ struct RollResultPopupView: View {
     }
 }
 
-struct RollResultPopup_Previews: PreviewProvider {
-    static var previews: some View {
-        RollResultPopupView(title: "", result: "", popupClickedCallback: {})
-    }
-}
+//struct RollResultPopup_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RollResultPopupView(title: "", result: "", popupClickedCallback: {})
+//    }
+//}
 
 struct CountdownTimer: View {
     
