@@ -12,6 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ZStack {
+                GeneratorTypeSelectionView()
                 ZStack(alignment: .bottomTrailing) {
                     Rectangle()
                         .foregroundColor(.clear)
