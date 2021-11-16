@@ -90,15 +90,6 @@ class FloatingMenuModel: ObservableObject {
     
     func displayPopUp(die: DieType) {
 
-        // Cancel the timer that was going to close the view, then recreate a timer and dispatch it.
-//        if let popupTimer = self.hidePopupTimer {
-//            popupTimer.cancel()
-//        }
-//        self.hidePopupTimer = DispatchWorkItem {
-//            self.popUpDisplayed  = false
-//        }
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: self.hidePopupTimer!)
-
         // Check how we need to display the pop up here.
         if self.popUpDisplayed  == false {
             
@@ -176,8 +167,8 @@ class FloatingMenuModel: ObservableObject {
 /// The actual floating menu view, contains a set of buttons
 struct FloatingMenu: View {
     
-    @State var mainButton = false
-        
+    @State var buttonsAreVisible = false
+    
     @ObservedObject var model: FloatingMenuModel = FloatingMenuModel()
 
     
@@ -186,46 +177,63 @@ struct FloatingMenu: View {
             Rectangle()
                 .foregroundColor(.clear)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-            VStack {
-                Spacer()
+            ZStack(alignment: .bottom) {
+                Rectangle()
+                    .frame(width: 60, height: self.buttonsAreVisible ? 480 : 0)
+                    .opacity(self.buttonsAreVisible ? 0.6 : 0)
+                    .animation(Animation.easeOut(duration: 0.25), value: self.buttonsAreVisible)
+                    .cornerRadius(100)
                 
-                // Create a floating button for each item in the model.
-                ForEach(0..<self.model.buttonsDisplayed.count) { index in
-                    
-                    if self.model.buttonsDisplayed[index] {
-                        Button(action: {
-                            self.model.displayPopUp(die: self.model.buttonType[index])
-                        }) {
-                            self.model.getDieButtonView(dieType: self.model.buttonType[index])
+                VStack {
+                    Group {
+                        // Create a floating button for each item in the model.
+                        ForEach(0..<self.model.buttonsDisplayed.count) { index in
+                            
+                            Button(action: {
+                                self.model.displayPopUp(die: self.model.buttonType[index])
+                            }) {
+                                self.model.getDieButtonView(dieType: self.model.buttonType[index])
+                            }
+                            .opacity(self.buttonsAreVisible ? 1 : 0)
+                            .animation(Animation.easeOut(duration: 0.25).delay(0.025),
+                                       value: self.buttonsAreVisible)
+                            .disabled(!self.buttonsAreVisible)
                         }
                     }
-                }
-                Button(action: {
-                    self.showMenu()
-                }) {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(Color(red: 0/255,
-                                                   green: 125/255,
-                                                   blue: 125/255))
-                            .frame(width: 60, height: 60)
-                            .shadow(color: Color.gray.opacity(0.75), radius: 3, x: -3, y: 3)
-                        if(self.mainButton) {
-                            Image(systemName: "x.circle")
-                                .resizable()
-                                .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .scaledToFit()
-                                .foregroundColor(Color(red: 0/255,
-                                                       green: 0/255,
-                                                       blue: 0/255))
+                    .frame(width: self.buttonsAreVisible ? 60 : 0, height: self.buttonsAreVisible ? .infinity : 0)
+                    .animation(Animation.easeOut(duration: 0.5), value: self.buttonsAreVisible)
+
+                    Button(action: {
+                        withAnimation {
+                            // Flip the main button to display a X image
+                            self.buttonsAreVisible.toggle()
                         }
-                        else {
-                            Image("Dice-1")
-                                .resizable()
-                                .frame(width: 83/2, height: 96/2)
-                                .foregroundColor(Color(red: 156/255,
-                                                       green: 163/255,
-                                                       blue: 173/255))
+                        self.showMenu()
+                    }) {
+                        ZStack {
+                            Circle()
+                                .foregroundColor(Color(red: 0/255,
+                                                       green: 125/255,
+                                                       blue: 125/255))
+                                .frame(width: 60, height: 60)
+                                .shadow(color: Color.gray.opacity(0.75), radius: 3, x: -3, y: 3)
+                            if(self.buttonsAreVisible) {
+                                Image(systemName: "x.circle")
+                                    .resizable()
+                                    .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .scaledToFit()
+                                    .foregroundColor(Color(red: 0/255,
+                                                           green: 0/255,
+                                                           blue: 0/255))
+                            }
+                            else {
+                                Image("Dice-1")
+                                    .resizable()
+                                    .frame(width: 83/2, height: 96/2)
+                                    .foregroundColor(Color(red: 156/255,
+                                                           green: 163/255,
+                                                           blue: 173/255))
+                            }
                         }
                     }
                 }
@@ -239,9 +247,6 @@ struct FloatingMenu: View {
     
     func showMenu() {
         
-        // Flip the main button to display a X image
-        self.mainButton.toggle()
-
         // Start timers to animate each button in sequence.
         var timer: Int = 0
         for index in 0..<self.model.buttonsDisplayed.count {
