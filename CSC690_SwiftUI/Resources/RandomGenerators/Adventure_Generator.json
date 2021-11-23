@@ -1,0 +1,735 @@
+{
+  "generatorName": "Quick Adventure Generator",
+  "currentGenerationList": [],
+  "currentGeneratedString": "",
+  "keyIndicies": {
+    "genre": 2,
+    "mood": 0,
+    "plot": 8,
+    "theme": 4,
+    "trope": 6
+  },
+  "stringItems": [
+    {
+      "_itemStrings": [
+        "mood"
+      ],
+      "itemType": 2
+    },
+    {
+      "_itemStrings": [
+        " "
+      ],
+      "itemType": 1
+    },
+    {
+      "_itemStrings": [
+        "genre"
+      ],
+      "itemType": 2
+    },
+    {
+      "_itemStrings": [
+        " adventure about "
+      ],
+      "itemType": 1
+    },
+    {
+      "_itemStrings": [
+        "theme"
+      ],
+      "itemType": 2
+    },
+    {
+      "_itemStrings": [
+        " involving "
+      ],
+      "itemType": 1
+    },
+    {
+      "_itemStrings": [
+        "trope"
+      ],
+      "itemType": 2
+    },
+    {
+      "_itemStrings": [
+        " where "
+      ],
+      "itemType": 1
+    },
+    {
+      "_itemStrings": [
+        "plot"
+      ],
+      "itemType": 2
+    }
+  ],
+  "tables": {
+    "spouse_type": {
+      "items": [
+        {
+          "staticString": "husband",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "wife",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 2
+    },
+    "gender": {
+      "items": [
+        {
+          "staticString": "man",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "woman",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 2
+    },
+    "goal": {
+      "items": [
+        {
+          "staticString": "save",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "destroy",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 2
+    },
+    "trope": {
+      "items": [
+        {
+          "staticString": "a bid for immortality",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a child king\\/queen",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a commoner becoming powerful",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a conspiracy",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "",
+          "type": 1,
+          "recursiveItems": [
+            {
+              "_itemStrings": [
+                "a "
+              ],
+              "itemType": 1
+            },
+            {
+              "_itemStrings": [
+                "spouse_type"
+              ],
+              "itemType": 2
+            }
+          ]
+        },
+        {
+          "staticString": "a goodie falling in love with baddie",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a love triangle",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a missing person",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a moral quandary",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "",
+          "type": 1,
+          "recursiveItems": [
+            {
+              "_itemStrings": [
+                "a mysterious "
+              ],
+              "itemType": 1
+            },
+            {
+              "_itemStrings": [
+                "gender"
+              ],
+              "itemType": 2
+            }
+          ]
+        },
+        {
+          "staticString": "",
+          "type": 1,
+          "recursiveItems": [
+            {
+              "_itemStrings": [
+                "a plot to "
+              ],
+              "itemType": 1
+            },
+            {
+              "_itemStrings": [
+                "goal"
+              ],
+              "itemType": 2
+            }
+          ]
+        },
+        {
+          "staticString": "a secret society in control",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a stranger who comes to town",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a super villain",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a terrible event with a silver lining",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "a terrible misunderstanding",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "an unbeatable hero",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "someone barely making it in time",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the birth of a savior",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the undead",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 20
+    },
+    "infiltrate_location": {
+      "items": [
+        {
+          "staticString": "lair",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "base",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 2
+    },
+    "plot": {
+      "items": [
+        {
+          "staticString": "the party has to prevent an ambush",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party has to pull off a heist",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party is attacked for unknown reasons",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party is being blackmailed",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party is seeking shelter from some threat",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party is transported to a strange location",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must assassinate a bad guy",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "",
+          "type": 1,
+          "recursiveItems": [
+            {
+              "_itemStrings": [
+                "the party must infiltrate a "
+              ],
+              "itemType": 1
+            },
+            {
+              "_itemStrings": [
+                "infiltrate_location"
+              ],
+              "itemType": 2
+            }
+          ]
+        },
+        {
+          "staticString": "the party must escape from prison",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must escort something valuable",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "",
+          "type": 1,
+          "recursiveItems": [
+            {
+              "_itemStrings": [
+                "the party must guard "
+              ],
+              "itemType": 1
+            },
+            {
+              "_itemStrings": [
+                "guarding"
+              ],
+              "itemType": 2
+            }
+          ]
+        },
+        {
+          "staticString": "the party must intercept an evil plot",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must investigate an occurrence",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must make a new enterprise work",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must make it through a dangerous location",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must go on a diplomatic mission",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must perform surveillance",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must respond to a distress signal",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must find a missing person",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the party must win a contest of some kind",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 20
+    },
+    "theme": {
+      "items": [
+        {
+          "staticString": "injustice",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "betrayal",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "corruption",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "disillusionment",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "facing the darkness",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "good versus evil",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "heroism",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "identity",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "love and sacrifice",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "power and corruption",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "religious hypocrisy",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "self-preservation",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "survival",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "temptation",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the balance",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "immortality",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the inevitable",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "the quest for power",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "vanity",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "war",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 20
+    },
+    "mood": {
+      "items": [
+        {
+          "staticString": "action-packed",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "apocalyptic",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "awe-inspiring",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "courtly",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "debauched",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "fantastical",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "foreboding",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "frenetic",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "gloomy",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "grim",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "mysterious",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "scholarly",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "silly",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "suspenseful",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "swashbuckling",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "terrifying",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "tongue-in-cheek",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "tragic",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "vengeful",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "wistful",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 20
+    },
+    "guarding": {
+      "items": [
+        {
+          "staticString": "somewhere",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "something important",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 2
+    },
+    "genre": {
+      "items": [
+        {
+          "staticString": "detective",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "dystopian",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "epic",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "folk-tale",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "ghost story",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "horror",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "legend",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "mission",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "mystery",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "mythology",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "paranormal",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "pirate",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "plane-walker",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "satire",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "spy",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "surrealist",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "suspense",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "swashbuckler",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "tragedy",
+          "type": 0,
+          "recursiveItems": []
+        },
+        {
+          "staticString": "undead",
+          "type": 0,
+          "recursiveItems": []
+        }
+      ],
+      "totalWeight": 20
+    }
+  }
+}
