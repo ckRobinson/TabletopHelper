@@ -11,7 +11,7 @@ class RollResultPopUpModel: ObservableObject {
 
     @Published var progress: CGFloat = 1.0
     
-    private var isTiming: Bool = true
+    private var isTiming: Bool = false
     private var countdownTimer: CountdownTimer?
     
     private var timer: Timer?
@@ -64,7 +64,7 @@ class RollResultPopUpModel: ObservableObject {
                 self.progress = 0
             }
             
-            print(progress)
+            // Run just past 0 to visually make the progress bar hit the bottom.
             if runCount <= -0.03 {
                 
                     
