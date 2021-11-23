@@ -27,25 +27,31 @@ class NameGeneratorLoader {
     var generatorIndex = 0
     
     init() {
-        if let sylvariFilePath = Bundle.main.path(forResource: "sylvari_female", ofType: "json"),
-           let sylvariData = FileManager.default.contents(atPath: sylvariFilePath) {
-            
-            do {
-                let markovGenerator = try JSONDecoder().decode(MarkovChain.self, from: sylvariData)
-                self.markovGenerators.append(markovGenerator)
-            } catch {
-                print(error)
-            }
-        }
         
-        if let sylvariFilePath = Bundle.main.path(forResource: "sylvari_male", ofType: "json"),
-           let sylvariData = FileManager.default.contents(atPath: sylvariFilePath) {
+        // Get list of name generators from CSV and unwrap all optional data
+        if let nameGeneratorListPath = Bundle.main.path(forResource: "Name_Generator_List", ofType: "csv"),
+           let nameGeneratorLisData = FileManager.default.contents(atPath: nameGeneratorListPath),
+           let content = String(data: nameGeneratorLisData, encoding: .utf8) {
             
-            do {
-                let markovGenerator = try JSONDecoder().decode(MarkovChain.self, from: sylvariData)
-                self.markovGenerators.append(markovGenerator)
-            } catch {
-                print(error)
+            // Split the data and loop through rows, each row is a new name generator
+            let rows = content.components(separatedBy: "\n")
+            for row in rows {
+                
+                // Make sure the row is not "" because that can cause a crash.
+                if row != "" {
+                    
+                    // attempt to get the file and data for this generator and decode it into a generator.
+                    if let path = Bundle.main.path(forResource: row, ofType: "json"),
+                       let data = FileManager.default.contents(atPath: path) {
+                        
+                        do {
+                            let markovGenerator = try JSONDecoder().decode(MarkovChain.self, from: data)
+                            self.markovGenerators.append(markovGenerator)
+                        } catch {
+                            print(error)
+                        }
+                   }
+                }
             }
         }
     }
