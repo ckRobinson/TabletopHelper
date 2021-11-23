@@ -272,10 +272,12 @@ struct RandomGenerator: RegexStringIndiciesHelpers, Codable {
     private var currentGenerationList: [String] = []
 
     public private(set) var currentGeneratedString: String = ""
+    public let generatorName: String
     
-    init(baseString: String, tables: [String : GeneratorTable]) {
+    init(baseString: String, tables: [String : GeneratorTable], generatorName: String) {
 
         self.tables = tables
+        self.generatorName = generatorName
         
         do {
             let regex = try NSRegularExpression(pattern: "\\[\\[[a-zA-Z0-9_-|]*\\]\\]", options: [])
@@ -469,7 +471,7 @@ func getGeneratorTable(csvData: [[String]]) -> [String : GeneratorTable] {
     return keyItems
 }
 
-func getGenerator(filePath: String?) -> RandomGenerator? {
+func getGenerator(filePath: String?, generatorName: String) -> RandomGenerator? {
     
     var generator: RandomGenerator? = nil
     if let path = filePath {
@@ -485,7 +487,7 @@ func getGenerator(filePath: String?) -> RandomGenerator? {
             let sentence = csvData[1][0]
             keyItems.removeValue(forKey: "sentence")
             
-            generator = RandomGenerator(baseString: sentence, tables: keyItems)
+            generator = RandomGenerator(baseString: sentence, tables: keyItems, generatorName: generatorName)
         }
     }
     
@@ -494,12 +496,13 @@ func getGenerator(filePath: String?) -> RandomGenerator? {
 
 
 let resourceFileName = "Sheet 1-Adventure Generator"
+let generatorName = ""
 let debug = false // Swap this to determine if the file is printed to json or generator is tested
 
 // get the file path for the file "test.json" in the playground bundle
 let filePath = Bundle.main.path(forResource: resourceFileName, ofType: "csv")
 
-if var generator = getGenerator(filePath: filePath) {
+if var generator = getGenerator(filePath: filePath, generatorName: generatorName) {
     
     if debug {
         
