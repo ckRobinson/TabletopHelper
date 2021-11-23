@@ -200,7 +200,7 @@ struct FloatingMenu: View {
                             .disabled(!self.buttonsAreVisible)
                         }
                     }
-                    .frame(width: self.buttonsAreVisible ? 60 : 0, height: self.buttonsAreVisible ? .infinity : 0)
+                    .frame(width: self.buttonsAreVisible ? 60 : 0, height: self.buttonsAreVisible ? 50 : 0)
                     .animation(Animation.easeOut(duration: 0.5), value: self.buttonsAreVisible)
 
                     Button(action: {
@@ -220,7 +220,7 @@ struct FloatingMenu: View {
                             if(self.buttonsAreVisible) {
                                 Image(systemName: "x.circle")
                                     .resizable()
-                                    .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 40, height: 40, alignment: .center)
                                     .scaledToFit()
                                     .foregroundColor(Color(red: 0/255,
                                                            green: 0/255,
