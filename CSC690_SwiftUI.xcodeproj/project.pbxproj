@@ -12,9 +12,11 @@
 		7E1CA2EE273DB9D0007C19B5 /* sylvari_female.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E1CA2ED273DB9D0007C19B5 /* sylvari_female.json */; };
 		7E55CB67274DA24900521822 /* Tavern_Generator.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB63274DA24800521822 /* Tavern_Generator.json */; };
 		7E55CB68274DA24900521822 /* Adventure_Generator.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB64274DA24900521822 /* Adventure_Generator.json */; };
-		7E55CB69274DA24900521822 /* NPC_Apperance.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB65274DA24900521822 /* NPC_Apperance.json */; };
+		7E55CB69274DA24900521822 /* NPC_Appearance.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB65274DA24900521822 /* NPC_Appearance.json */; };
 		7E55CB6A274DA24900521822 /* NPC_Generator.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB66274DA24900521822 /* NPC_Generator.json */; };
+		7E55CB6E274DA3CE00521822 /* RandomGeneratorFromTableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55CB6D274DA3CE00521822 /* RandomGeneratorFromTableSet.swift */; };
 		7E55CB72274DA67100521822 /* Name_Generator_List.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB71274DA67100521822 /* Name_Generator_List.csv */; };
+		7E55CB76274DBBEC00521822 /* random_generator_list.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB75274DBBEC00521822 /* random_generator_list.csv */; };
 		7E59250D27273AA400576D4D /* CSC690_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59250C27273AA400576D4D /* CSC690_SwiftUIApp.swift */; };
 		7E59250F27273AA400576D4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59250E27273AA400576D4D /* ContentView.swift */; };
 		7E59251127273AA500576D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E59251027273AA500576D4D /* Assets.xcassets */; };
@@ -66,9 +68,11 @@
 		7E1CA2ED273DB9D0007C19B5 /* sylvari_female.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sylvari_female.json; sourceTree = "<group>"; };
 		7E55CB63274DA24800521822 /* Tavern_Generator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tavern_Generator.json; sourceTree = "<group>"; };
 		7E55CB64274DA24900521822 /* Adventure_Generator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Adventure_Generator.json; sourceTree = "<group>"; };
-		7E55CB65274DA24900521822 /* NPC_Apperance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NPC_Apperance.json; sourceTree = "<group>"; };
+		7E55CB65274DA24900521822 /* NPC_Appearance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NPC_Appearance.json; sourceTree = "<group>"; };
 		7E55CB66274DA24900521822 /* NPC_Generator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NPC_Generator.json; sourceTree = "<group>"; };
+		7E55CB6D274DA3CE00521822 /* RandomGeneratorFromTableSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorFromTableSet.swift; sourceTree = "<group>"; };
 		7E55CB71274DA67100521822 /* Name_Generator_List.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Name_Generator_List.csv; sourceTree = "<group>"; };
+		7E55CB75274DBBEC00521822 /* random_generator_list.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = random_generator_list.csv; sourceTree = "<group>"; };
 		7E59250927273AA400576D4D /* CSC690_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC690_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E59250C27273AA400576D4D /* CSC690_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC690_SwiftUIApp.swift; sourceTree = "<group>"; };
 		7E59250E27273AA400576D4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				7E1CA2E3273C577B007C19B5 /* MarkovChain.swift */,
+				7E55CB6D274DA3CE00521822 /* RandomGeneratorFromTableSet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,9 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				7E55CB64274DA24900521822 /* Adventure_Generator.json */,
-				7E55CB65274DA24900521822 /* NPC_Apperance.json */,
+				7E55CB65274DA24900521822 /* NPC_Appearance.json */,
 				7E55CB66274DA24900521822 /* NPC_Generator.json */,
 				7E55CB63274DA24800521822 /* Tavern_Generator.json */,
+				7E55CB75274DBBEC00521822 /* random_generator_list.csv */,
 			);
 			path = RandomGenerators;
 			sourceTree = "<group>";
@@ -336,10 +342,11 @@
 				7EE28AE8273DE372006B818F /* sylvari_male.json in Resources */,
 				7E55CB67274DA24900521822 /* Tavern_Generator.json in Resources */,
 				7E55CB72274DA67100521822 /* Name_Generator_List.csv in Resources */,
-				7E55CB69274DA24900521822 /* NPC_Apperance.json in Resources */,
+				7E55CB69274DA24900521822 /* NPC_Appearance.json in Resources */,
 				7E59251127273AA500576D4D /* Assets.xcassets in Resources */,
 				7E55CB68274DA24900521822 /* Adventure_Generator.json in Resources */,
 				7E1CA2EE273DB9D0007C19B5 /* sylvari_female.json in Resources */,
+				7E55CB76274DBBEC00521822 /* random_generator_list.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E55CB6E274DA3CE00521822 /* RandomGeneratorFromTableSet.swift in Sources */,
 				7EE28B0C273F525C006B818F /* Popup.swift in Sources */,
 				7EDC017827277F3200CCF743 /* RollResultPopup.swift in Sources */,
 				7E59250F27273AA400576D4D /* ContentView.swift in Sources */,
