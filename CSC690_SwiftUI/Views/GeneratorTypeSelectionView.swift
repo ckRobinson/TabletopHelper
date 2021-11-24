@@ -20,7 +20,7 @@ struct GeneratorTypeSelectionView: View {
                         .cornerRadius(10)
                         .padding()
                 }
-                NavigationLink(destination: Text("TEST")) {
+                NavigationLink(destination: RandomGeneratorSelectionView()) {
                     Text("Random Generators")
                         .frame(width: UIScreen.main.bounds.width * 0.66, height: UIScreen.main.bounds.width * 0.66, alignment: .center)
                         .background(Color.gray)
