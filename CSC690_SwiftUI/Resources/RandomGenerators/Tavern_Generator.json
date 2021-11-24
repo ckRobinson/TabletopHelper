@@ -39,7 +39,7 @@
       },
       {
         "_itemStrings": [
-          " The food is of "
+          "\n The food is "
         ],
         "itemType": 1
       },
@@ -51,7 +51,7 @@
       },
       {
         "_itemStrings": [
-          ". For breakfast they offer "
+          ".\n For breakfast they offer "
         ],
         "itemType": 1
       },
@@ -63,7 +63,7 @@
       },
       {
         "_itemStrings": [
-          ". Lunch has "
+          ".\n Lunch has "
         ],
         "itemType": 1
       },
@@ -75,7 +75,7 @@
       },
       {
         "_itemStrings": [
-          ". Dinner "
+          ".\n Dinner "
         ],
         "itemType": 1
       },
@@ -99,7 +99,7 @@
       },
       {
         "_itemStrings": [
-          ". On tap they have "
+          ".\n For drinks they have "
         ],
         "itemType": 1
       },
