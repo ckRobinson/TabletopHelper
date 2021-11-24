@@ -58,12 +58,15 @@ class NameGeneratorLoader {
     
     /// Get the set of data for the selected generator, then create and return a new sheet view by passing the generator into the constructor.
     /// - Returns: returns the newly created view for the user to generate names.
-    func getSheet() -> some View {
+    func getSheet(callback: (()->Void)? = nil) -> some View {
         let generator = self.markovGenerators[self.generatorIndex]
         let generatorTitle = generator.getGeneratorName() 
         let generatedName = generator.generateWord(order: .second) // Generate an initial name for the user
 
-        return NameGeneratorSheetView(name: generatedName, generatorTitle: generatorTitle, generator: generator)
+        return NameGeneratorSheetView(name: generatedName,
+                                      generatorTitle: generatorTitle,
+                                      generator: generator,
+                                      dismissCallback: callback ?? {} )
     }
 }
 
@@ -120,9 +123,14 @@ struct NameGeneratorSelection: View {
         }
         .frame(minHeight: 0, maxHeight: .infinity)
         .padding()
-        .sheet(isPresented: $generatorVisible, content: {
-            self.nameGenerators.getSheet()
+        .sheet(isPresented: $generatorVisible,
+               content: {
+                self.nameGenerators.getSheet(callback: dismissSheet)
         })
+    }
+    
+    func dismissSheet() -> Void {
+        self.generatorVisible = false
     }
 }
 
