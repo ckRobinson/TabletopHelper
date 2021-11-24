@@ -156,6 +156,11 @@ struct GeneratorTableItem: RegexStringIndiciesHelpers, Codable {
                     break
                 }
             }
+            
+            if workingString.count > 0 {
+                let genItem = GeneratorItem(itemString: workingString, type: .staticString)
+                self.recursiveItems.append( genItem );
+            }
         } catch {
             print("Error Parsing Regex")
         }
@@ -324,7 +329,10 @@ struct RandomGenerator: RegexStringIndiciesHelpers, Codable {
                 }
             }
 
-            
+            if workingString.count > 0 {
+                let genItem = GeneratorItem(itemString: workingString, type: .staticString)
+                self.stringItems.append( genItem );
+            }
         } catch {
             print("Error Parsing Regex")
         }
