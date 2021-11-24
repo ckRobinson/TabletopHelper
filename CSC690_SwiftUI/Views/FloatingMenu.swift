@@ -147,19 +147,19 @@ class FloatingMenuModel: ObservableObject {
     func getDieButtonView(dieType: DieType) -> some View {
         switch dieType {
         case .D20:
-            return MenuItem(icon: Image("Dice-1"), text: "D20")
+            return MenuItem(icon: Image("Dice-D20"), text: "D20")
         case .D12:
-            return MenuItem(icon: Image("Dice-2"), text: "D12")
+            return MenuItem(icon: Image("Dice-D12"), text: "D12")
         case .D10:
-            return MenuItem(icon: Image("Dice-3"), text: "D10")
+            return MenuItem(icon: Image("Dice-D10"), text: "D10")
         case .D100:
-            return MenuItem(icon: Image("Dice-4"), text: "D100")
+            return MenuItem(icon: Image("Dice-D100"), text: "D100")
         case .D8:
-            return MenuItem(icon: Image("Dice-5"), text: "D8")
+            return MenuItem(icon: Image("Dice-D8"), text: "D8")
         case .D6:
-            return MenuItem(icon: Image("Dice-6"), text: "D6")
+            return MenuItem(icon: Image("Dice-D6"), text: "D6")
         case .D4:
-            return MenuItem(icon: Image("Dice-7"), text: "D4")
+            return MenuItem(icon: Image("Dice-D4"), text: "D4")
         }
     }
 }
@@ -227,7 +227,7 @@ struct FloatingMenu: View {
                                                            blue: 0/255))
                             }
                             else {
-                                Image("Dice-1")
+                                Image("Dice-D20")
                                     .resizable()
                                     .frame(width: 83/2, height: 96/2)
                                     .foregroundColor(Color(red: 156/255,
