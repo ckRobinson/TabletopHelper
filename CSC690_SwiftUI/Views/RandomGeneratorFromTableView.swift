@@ -25,14 +25,10 @@ struct RandomGeneratorFromTableView: View {
     var body: some View {
         VStack {
 
-            Group {
-                Button(action: {
-                    self.dismissCallback?()
-                }, label: {
-                        Text("Dismiss")
-                }).padding()
-            }
-            .frame(maxWidth: .infinity, alignment: .trailing)
+            Capsule()
+                .fill(Color.secondary)
+                .frame(width: 30, height: 3)
+                .padding(10)
             ZStack {
                 Rectangle()
                     .foregroundColor(.clear)
@@ -88,9 +84,18 @@ struct RandomGeneratorFromTableView: View {
                         .padding()
                     }
                 }
+                
             }
-
-        }    }
+            Group {
+                Button(action: {
+                    self.dismissCallback?()
+                }, label: {
+                        Text("Dismiss")
+                }).padding()
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+        }
+    }
 }
 
 struct RandomGeneratorFromTableView_Previews: PreviewProvider {

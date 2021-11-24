@@ -18,14 +18,10 @@ struct NameGeneratorSheetView: View {
     var body: some View {
         VStack {
 
-            Group {
-                Button(action: {
-                    dismissCallback()
-                }, label: {
-                        Text("Dismiss")
-                }).padding()
-            }
-            .frame(maxWidth: .infinity, alignment: .trailing)
+            Capsule()
+                .fill(Color.secondary)
+                .frame(width: 30, height: 3)
+                .padding(10)
             ZStack {
                 Rectangle()
                     .foregroundColor(.clear)
@@ -74,7 +70,14 @@ struct NameGeneratorSheetView: View {
                     }
                 }
             }
-
+            Group {
+                Button(action: {
+                    dismissCallback()
+                }, label: {
+                        Text("Dismiss")
+                }).padding()
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
         }
     }
 }
