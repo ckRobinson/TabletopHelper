@@ -1,1065 +1,1214 @@
 {
-    "generatorName": "NPC Appearance",
-    "currentGenerationList": [],
     "currentGeneratedString": "",
+    "currentGenerationList": [],
+    "generatorName": "NPC Appearance",
     "keyIndicies": {
-      "gender": 0,
-      "species": 4,
-      "hair": 8,
-      "ears|teeth|nose": 10,
-      "eyes": 6,
-      "build": 2
+        "gender": 0,
+        "species": 4,
+        "hair": 8,
+        "ears|teeth|nose": 10,
+        "eyes": 6,
+        "build": 2
     },
     "stringItems": [
-      {
-        "_itemStrings": [
-          "gender"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " is a "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "build"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "species"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " with "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "eyes"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "hair"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " and "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "ears",
-          "teeth",
-          "nose"
-        ],
-        "itemType": 2
-      }
+        {
+            "_itemStrings": [
+                "gender"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " is a "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "build"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "species"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ", with "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "eyes"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ", "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "hair"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " and "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "ears",
+                "teeth",
+                "nose"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                "."
+            ],
+            "itemType": 1
+        }
     ],
     "tables": {
-      "gender": {
-        "items": [
-          {
-            "staticString": "he",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "she",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 2
-      },
-      "nose": {
-        "items": [
-          {
-            "staticString": "a crooked nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a bulbous nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a narrow nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a button nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a long nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a broad nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "an angular nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a round nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a broken nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a hawk-like nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a wide nose",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a delicate nose",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 12
-      },
-      "build": {
-        "items": [
-          {
-            "staticString": "slight and willowy",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "lean",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "barrel chested",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "coltish gangly",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "husky",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "muscular",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "statuesque",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "stocky",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "heavy-set",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "round-shouldered",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 10
-      },
-      "hair_color": {
-        "items": [
-          {
-            "staticString": "black",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "dark brown",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "light brown",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "gray",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "golden blonde",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "copper red",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "auburn",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 7
-      },
-      "hair": {
-        "items": [
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "thick "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "wispy "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "straight "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "wavy "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "curly "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "wiry "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "oily "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "lush "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "poofy "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "long "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "very long "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "greasy "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "unruly "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "a shaved "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "short-cropped "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "hair_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "bald",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 17
-      },
-      "ears": {
-        "items": [
-          {
-            "staticString": "over-sized ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "long ear lobes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "small ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "uneven ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "hairy ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pointy ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "short ear lobes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "ears that stick out",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "jug-handle ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "elaborately pierced ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "cauliflower ears",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "ears with improbable tufts of hair",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 12
-      },
-      "species": {
-        "items": [
-          {
-            "staticString": "human",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "half-elf",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "elf",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "half-orc",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "orc",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "gnome",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "halfling",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "dwarf",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "tiefling",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 9
-      },
-      "teeth": {
-        "items": [
-          {
-            "staticString": "full lips",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "buck-teeth",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "thin lips",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "rotting teeth",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "crooked teeth",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a broken or missing tooth",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pursed lips",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "dry cracked lips",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "one or more false teeth",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a mouth that hangs open",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a pronounced chin",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a cleft chin",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a dimple on the chin",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a rounded chin",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a sharp jawline",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a square jaw",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "a round jaw",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "an under-bite",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 18
-      },
-      "eye_color": {
-        "items": [
-          {
-            "staticString": "blue",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "green",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "brown",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "silver",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "amber",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 5
-      },
-      "eyes": {
-        "items": [
-          {
-            "staticString": "sleepy eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "shifty eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "watery eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "bright "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "cold "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "smiling eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "close-set eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "wild "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "distant "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "a lazy eye",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "piercing "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "watchful eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "dark "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "hooded eyes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "eyes of two different colors "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              },
-              {
-                "_itemStrings": [
-                  " and "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "slightly crossed "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "wide "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "beautiful "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "beady "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "penetrating "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "eye_color"
-                ],
-                "itemType": 2
-              }
-            ]
-          }
-        ],
-        "totalWeight": 20
-      }
+        "build": {
+            "items": [
+                {
+                    "staticString": "Slight and willowy",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Lean",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Barrel chested",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Coltish gangly",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Husky",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "muscular",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Statuesque",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Stocky",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "heavy-set",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Round-shouldered",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 10
+        },
+        "nose": {
+            "items": [
+                {
+                    "staticString": "A crooked nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A bulbous nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A narrow nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A button nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A long nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A broad nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "An angular nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A round nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A broken nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A hawk-like nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A wide nose",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A delicate nose",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 12
+        },
+        "gender": {
+            "items": [
+                {
+                    "staticString": "He",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "She",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 2
+        },
+        "ears": {
+            "items": [
+                {
+                    "staticString": "Over-sized ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Long ear lobes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Small ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Uneven ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Hairy ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pointy ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Short ear lobes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Ears that stick out",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Jug-handle ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Elaborately pierced ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Cauliflower ears",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Ears with improbable tufts of hair",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 12
+        },
+        "eye_color": {
+            "items": [
+                {
+                    "staticString": "Blue",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Green",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Brown",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Silver",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Amber",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 5
+        },
+        "hair": {
+            "items": [
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Thick "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Wispy "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Straight "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Wavy "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Curly "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Wiry "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Oily "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Lush "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Poofy "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Long "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " braids"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " Braids tight against the head"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Very long "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Greasy "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Unruly "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "A shaved head",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Short-cropped "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "hair_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " hair"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "bald",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 17
+        },
+        "species": {
+            "items": [
+                {
+                    "staticString": "Human",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Half-Elf",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Elf",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Half-Orc",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Orc",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Gnome",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Halfling",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Dwarf",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Tiefling",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 9
+        },
+        "hair_color": {
+            "items": [
+                {
+                    "staticString": "Black",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Dark brown",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Light brown",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "gray",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Golden blonde",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Copper red",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Auburn",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 7
+        },
+        "teeth": {
+            "items": [
+                {
+                    "staticString": "Full lips",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Buck-teeth",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Thin lips",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Rotting teeth",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Crooked teeth",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A broken or missing tooth",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pursed lips",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Dry, cracked lips",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "One or more false teeth",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A mouth that hangs open",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A pronounced chin",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A cleft chin",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A dimple on the chin",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A rounded chin",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A sharp jawline",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A square jaw",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "A round jaw",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "An under-bite",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 18
+        },
+        "eyes": {
+            "items": [
+                {
+                    "staticString": "Sleepy eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Shifty eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Watery eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Bright "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Cold "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "Smiling eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Close-set eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Wild "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Distant "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "A lazy eye",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Piercing "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "Watchful eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Dark "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "Hooded eyes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Eyes of two different colors "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " and "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Slightly crossed "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Wide "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Beautiful "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Beady "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Penetrating "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "eye_color"
+                            ],
+                            "itemType": 2
+                        },
+                        {
+                            "_itemStrings": [
+                                " eyes"
+                            ],
+                            "itemType": 1
+                        }
+                    ]
+                }
+            ],
+            "totalWeight": 20
+        }
     }
-  }
+}

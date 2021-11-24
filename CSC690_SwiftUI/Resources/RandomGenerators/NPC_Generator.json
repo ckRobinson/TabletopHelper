@@ -1,445 +1,451 @@
 {
-    "generatorName": "NPC Generator",
-    "currentGenerationList": [],
     "currentGeneratedString": "",
+    "currentGenerationList": [],
+    "generatorName": "NPC Generator",
     "keyIndicies": {
-      "age": 5,
-      "profession": 7,
-      "religion": 9,
-      "financial_status": 1,
-      "disposition": 3
+        "age": 5,
+        "profession": 7,
+        "religion": 9,
+        "financial_status": 1,
+        "disposition": 3
     },
     "stringItems": [
-      {
-        "_itemStrings": [
-          "A "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "financial_status"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "disposition"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "age"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "profession"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " who is "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "religion"
-        ],
-        "itemType": 2
-      }
+        {
+            "_itemStrings": [
+                "A "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "financial_status"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ", "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "disposition"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ", "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "age"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "profession"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " who is a "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "religion"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                "."
+            ],
+            "itemType": 1
+        }
     ],
     "tables": {
-      "financial_status": {
-        "items": [
-          {
-            "staticString": "rich",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "wealthy",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "modest",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "very modest",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "poor",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "impoverished",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 6
-      },
-      "profession": {
-        "items": [
-          {
-            "staticString": "tavern keeper",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "doctor",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "soldier",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "guard",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "merchant",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "farmer",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "scribe",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "acolyte",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "musician",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "servant",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "noble",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "artist",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "carpenter",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "weaver",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "chandler",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "blacksmith",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "tailor",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "ceramist",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "shepherd",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "bookbinder",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 20
-      },
-      "god": {
-        "items": [
-          {
-            "staticString": "umera",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "lyras",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "ogden",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "zelend",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "thirr",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "melkia",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "elestra",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "koros",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 8
-      },
-      "disposition": {
-        "items": [
-          {
-            "staticString": "kind and welcoming",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "friendly",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "polite",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "impolite",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "rude",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "hostile",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 6
-      },
-      "age": {
-        "items": [
-          {
-            "staticString": "young child",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "adolecent",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "young adult",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "middle age",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "aging",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "elderly",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 6
-      },
-      "alignment": {
-        "items": [
-          {
-            "staticString": "lawful good",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "neutral good",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "chaotic good",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "lawful neutral",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "true neutral",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "chaotic neutral",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "lawful evil",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "neutral evil",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "chaotic evil",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 9
-      },
-      "religion": {
-        "items": [
-          {
-            "staticString": "not religious",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "mildly devout follower of "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "god"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "moderately devout follower of "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "god"
-                ],
-                "itemType": 2
-              }
-            ]
-          },
-          {
-            "staticString": "",
-            "type": 1,
-            "recursiveItems": [
-              {
-                "_itemStrings": [
-                  "very devout follower of "
-                ],
-                "itemType": 1
-              },
-              {
-                "_itemStrings": [
-                  "god"
-                ],
-                "itemType": 2
-              }
-            ]
-          }
-        ],
-        "totalWeight": 4
-      }
+        "financial_status": {
+            "items": [
+                {
+                    "staticString": "Rich",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Wealthy",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Modest",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Very modest",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Poor",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "impoverished",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 6
+        },
+        "profession": {
+            "items": [
+                {
+                    "staticString": "Tavern Keeper",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Doctor",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "soldier",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Guard",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Merchant ",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "farmer",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Scribe",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "acolyte",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Musician",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "servant",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "noble",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "artist",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "carpenter",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "weaver",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "chandler",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "blacksmith",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Tailor",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Ceramist",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "shepherd",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "bookbinder",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 20
+        },
+        "age": {
+            "items": [
+                {
+                    "staticString": "Young Child",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Adolecent",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Young Adult",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Middle Age",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Aging",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Elderly",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 6
+        },
+        "god": {
+            "items": [
+                {
+                    "staticString": "Umera",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Lyras",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Ogden",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Zelend",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Thirr",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Melkia",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Elestra",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Koros",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 8
+        },
+        "disposition": {
+            "items": [
+                {
+                    "staticString": "Kind and welcoming",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "friendly",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "polite",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Impolite",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Rude",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "hostile",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 6
+        },
+        "alignment": {
+            "items": [
+                {
+                    "staticString": "Lawful good",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Neutral good",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Chaotic good",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Lawful neutral ",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "True neutral",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Chaotic neutral",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Lawful evil",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Neutral evil",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Chaotic evil",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 9
+        },
+        "religion": {
+            "items": [
+                {
+                    "staticString": "Not religious",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Mildly devout follower of "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "god"
+                            ],
+                            "itemType": 2
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Moderately devout follower of "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "god"
+                            ],
+                            "itemType": 2
+                        }
+                    ]
+                },
+                {
+                    "staticString": "",
+                    "type": 1,
+                    "recursiveItems": [
+                        {
+                            "_itemStrings": [
+                                "Very devout follower of "
+                            ],
+                            "itemType": 1
+                        },
+                        {
+                            "_itemStrings": [
+                                "god"
+                            ],
+                            "itemType": 2
+                        }
+                    ]
+                }
+            ],
+            "totalWeight": 4
+        }
     }
-  }
+}

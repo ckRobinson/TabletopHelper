@@ -1,0 +1,21 @@
+generator_name,sentence,age,disposition,alignment,religion,financial_status,god,profession
+NPC Generator,"A [[financial_status]], [[disposition]], [[age]] [[profession]] who is a [[religion]].",Young Child,Kind and welcoming,Lawful good,Not religious,Rich,Umera,Tavern Keeper
+,,Adolecent,friendly,Neutral good,Mildly devout follower of [[god]],Wealthy,Lyras,Doctor
+,,Young Adult,polite,Chaotic good,Moderately devout follower of [[god]],Modest,Ogden,soldier
+,,Middle Age,Impolite,Lawful neutral ,Very devout follower of [[god]],Very modest,Zelend,Guard
+,,Aging,Rude,True neutral,,Poor,Thirr,Merchant 
+,,Elderly,hostile,Chaotic neutral,,impoverished,Melkia,farmer
+,,,,Lawful evil,,,Elestra,Scribe
+,,,,Neutral evil,,,Koros,acolyte
+,,,,Chaotic evil,,,,Musician
+,,,,,,,,servant
+,,,,,,,,noble
+,,,,,,,,artist
+,,,,,,,,carpenter
+,,,,,,,,weaver
+,,,,,,,,chandler
+,,,,,,,,blacksmith
+,,,,,,,,Tailor
+,,,,,,,,Ceramist
+,,,,,,,,shepherd
+,,,,,,,,bookbinder

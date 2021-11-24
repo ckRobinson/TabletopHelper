@@ -1,551 +1,557 @@
 {
-    "generatorName": "Tavern Generator",
-    "currentGenerationList": [],
     "currentGeneratedString": "",
+    "currentGenerationList": [],
+    "generatorName": "Tavern Generator",
     "keyIndicies": {
-      "sweets": 13,
-      "dinner": 11,
-      "lunch": 9,
-      "tavern_first_name": 1,
-      "breakfast": 7,
-      "quality": 5,
-      "beverages": 17,
-      "tavern_second_name": 3
+        "sweets": 13,
+        "lunch": 9,
+        "dinner": 11,
+        "tavern_first_name": 1,
+        "breakfast": 7,
+        "quality": 5,
+        "beverages": 17,
+        "tavern_second_name": 3
     },
     "stringItems": [
-      {
-        "_itemStrings": [
-          "The "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "tavern_first_name"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "tavern_second_name"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          "\n The food is "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "quality"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          ".\n For breakfast they offer "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "breakfast"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          ".\n Lunch has "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "lunch"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          ".\n Dinner "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "dinner"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " with "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "sweets"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          ".\n For drinks they have "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "beverages"
-        ],
-        "itemType": 2
-      },
-      {
-        "_itemStrings": [
-          " and "
-        ],
-        "itemType": 1
-      },
-      {
-        "_itemStrings": [
-          "beverages"
-        ],
-        "itemType": 2
-      }
+        {
+            "_itemStrings": [
+                "The "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "tavern_first_name"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "tavern_second_name"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ".\n\nThe food is "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "quality"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ".\nFor breakfast they offer "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "breakfast"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ".\nLunch has "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "lunch"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ".\nDinner "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "dinner"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " with "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "sweets"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                ".\nTo drink they have "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "beverages"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                " and "
+            ],
+            "itemType": 1
+        },
+        {
+            "_itemStrings": [
+                "beverages"
+            ],
+            "itemType": 2
+        },
+        {
+            "_itemStrings": [
+                "."
+            ],
+            "itemType": 1
+        }
     ],
     "tables": {
-      "": {
-        "items": [],
-        "totalWeight": 0
-      },
-      "dinner": {
-        "items": [
-          {
-            "staticString": "lamb stew with white beans",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "elk and potato pie with carrots",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "roasted beef with onions and potatoes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "baked salmon with lemon",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "cabbage and tomato soup",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "broccoli and chicken with cream sauce",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "garlic shrimp over rice",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pasta with gravy",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pumpkin soup",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "turkey with stuffing and gravy",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 10
-      },
-      "sweets": {
-        "items": [
-          {
-            "staticString": "apple pie",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "cranberry scones",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pumpkin nutmeg rolls",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "cornbread with maple syrup",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "lemon poppy seed muffins",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "shortcake biscuits and strawberries",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "butterscotch pie",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "hot cocoa",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "date and cocoa rolls",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "peanut cookies",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 10
-      },
-      "lunch": {
-        "items": [
-          {
-            "staticString": "tomato and cheese sandwich",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "spring salad with vinegar",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "balsamic apples with mozzarella",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "fried chicken sandwich",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "toasted cheese sandwich",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "beef porridge",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "fried onions and potatoes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "rye bread with rosemary butter",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "onion soup",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pita and salsa",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 10
-      },
-      "tavern_first_name": {
-        "items": [
-          {
-            "staticString": "roasted",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "crooked",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "blasted",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "windy",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "spotted",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "gilded",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "tilted",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "silken",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "drunk",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "torn",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "singing",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "regal",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 12
-      },
-      "breakfast": {
-        "items": [
-          {
-            "staticString": "pancakes with bacon",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "toast and tomatoes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "potatoes sausage and tomatoes",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "eggs and green peppers",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "bread and spring butter",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "oatmeal with dried apples",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "bread and milk",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "pecan muffins",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "egg and vegetable soup",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "roasted carrots with honey",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 10
-      },
-      "quality": {
-        "items": [
-          {
-            "staticString": "fantastic",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "good",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "mediocre",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "disgusting",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 4
-      },
-      "beverages": {
-        "items": [
-          {
-            "staticString": "red wine",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "rice wine",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "beer",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "whiskey",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "cider",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "gin",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "rum",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "bouillon",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 8
-      },
-      "tavern_second_name": {
-        "items": [
-          {
-            "staticString": "rat",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "goat",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "thorn",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "kettle",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "violin",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "cloak",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "tome",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "inn",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "throne",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "boot",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "sword",
-            "type": 0,
-            "recursiveItems": []
-          },
-          {
-            "staticString": "stave",
-            "type": 0,
-            "recursiveItems": []
-          }
-        ],
-        "totalWeight": 12
-      }
+        "sweets": {
+            "items": [
+                {
+                    "staticString": "Apple pie",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Cranberry scones",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pumpkin nutmeg rolls",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Cornbread with maple syrup",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Lemon poppy seed muffins",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Shortcake biscuits and strawberries",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Butterscotch pie ",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Hot cocoa",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Date and cocoa rolls",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Peanut cookies",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 10
+        },
+        "lunch": {
+            "items": [
+                {
+                    "staticString": "Tomato and cheese sandwich",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Spring salad with vinegar",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Balsamic apples with mozzarella",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Fried chicken sandwich ",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Toasted cheese sandwich",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Beef porridge",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Fried onions and potatoes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Rye bread with rosemary butter",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Onion soup",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pita and salsa",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 10
+        },
+        "dinner": {
+            "items": [
+                {
+                    "staticString": "Lamb stew with white beans",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Elk and potato pie with carrots",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Roasted beef with onions and potatoes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Baked salmon with lemon",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Cabbage and tomato soup",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Broccoli and chicken with cream sauce",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Garlic shrimp over rice",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pasta with gravy",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pumpkin soup",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Turkey with stuffing and gravy",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 10
+        },
+        "": {
+            "items": [],
+            "totalWeight": 0
+        },
+        "tavern_first_name": {
+            "items": [
+                {
+                    "staticString": "Roasted",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "crooked",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "blasted",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Windy",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Spotted",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Gilded",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "tilted",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "silken",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "drunk",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Torn",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "singing",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "regal",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 12
+        },
+        "breakfast": {
+            "items": [
+                {
+                    "staticString": "Pancakes with bacon",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Toast and tomatoes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Potatoes sausage and tomatoes",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Eggs and green peppers",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Bread and spring butter",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Oatmeal with dried apples",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Bread and milk",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Pecan muffins",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Egg and vegetable soup",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Roasted carrots with honey",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 10
+        },
+        "tavern_second_name": {
+            "items": [
+                {
+                    "staticString": "Rat",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "goat",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Thorn",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Kettle",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Violin",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "cloak",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "tome",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "inn",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "throne",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "boot",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "sword",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "stave",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 12
+        },
+        "beverages": {
+            "items": [
+                {
+                    "staticString": "Red wine",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Rice wine",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "beer",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Whiskey ",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "cider",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "gin",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "rum",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "bouillon",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 8
+        },
+        "quality": {
+            "items": [
+                {
+                    "staticString": "Fantastic",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "Good",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "mediocre",
+                    "type": 0,
+                    "recursiveItems": []
+                },
+                {
+                    "staticString": "disgusting",
+                    "type": 0,
+                    "recursiveItems": []
+                }
+            ],
+            "totalWeight": 4
+        }
     }
-  }
+}

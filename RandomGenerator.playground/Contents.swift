@@ -1,4 +1,5 @@
 import UIKit
+import SwiftCSV
 
 // MARK: - String capitalization helper
 // Extends strings to allow for capitalizing only the first letter of the string leaving the rest unchanged.
@@ -437,49 +438,7 @@ struct RandomGenerator: RegexStringIndiciesHelpers, Codable {
 
 // MARK: - PLAYGROUND CODE.
 
-// Load CSV File into 2D array
-func csv(data: String) -> [[String]] {
-    
-    var result: [[String]] = []
-    
-    let rows = data.components(separatedBy: "\r\n")
-        for row in rows {
-            if row != "" {
-                
-                let columns = row.components(separatedBy: ",")
-                result.append(columns)
-            }
-        }
-    
-    return result
-}
-
-
-func getGeneratorTable(csvData: [[String]]) -> [String : GeneratorTable] {
-    var keyItems: [String : GeneratorTable] = [:]
-
-    var col = 0
-    for key in csvData[0] {
-        
-        var column: [String] = []
-        for row in 1..<csvData.count {
-
-            var str = csvData[row][col]
-            if str != "" {
-                str = str.trimmingCharacters(in: .whitespaces)
-                str = str.lowercased()
-                column.append(str)
-            }
-        }
-        keyItems[key] = GeneratorTable(itemList: column)
-        
-        col += 1
-    }
-    
-    return keyItems
-}
-
-func getGenerator(filePath: String?, generatorName: String) -> RandomGenerator? {
+func getGenerator(filePath: String?) -> RandomGenerator? {
     
     var generator: RandomGenerator? = nil
     if let path = filePath {
@@ -487,15 +446,35 @@ func getGenerator(filePath: String?, generatorName: String) -> RandomGenerator? 
         let contentData = FileManager.default.contents(atPath: path)
 
         // get the string
-        let content = String(data: contentData!, encoding: .utf8)
-        if let c = content {
-            
-            let csvData = csv(data: c)
-            var keyItems = getGeneratorTable(csvData: csvData)
-            let sentence = csvData[1][0]
-            keyItems.removeValue(forKey: "sentence")
-            
-            generator = RandomGenerator(baseString: sentence, tables: keyItems, generatorName: generatorName)
+        if let content = String(data: contentData!, encoding: .utf8) {
+
+            var sentence = ""
+            var generatorName = ""
+            var keyItems: [String : GeneratorTable] = [:]
+            do {
+                let csvData = try CSV(string: content)
+                for column in csvData.namedColumns {
+                    if column.key.lowercased() == "sentence" {
+                        sentence = column.value[0]
+                    }
+                    else if column.key.lowercased() == "generator_name" {
+                        generatorName = column.value[0]
+                    }
+                    else {
+                     
+                        var rows: [String] = []
+                        for row in column.value {
+                            if row != "" {
+                                
+                                rows.append(row)
+                            }
+                        }
+
+                        keyItems[column.key] = GeneratorTable(itemList: rows)
+                    }
+                }
+                generator = RandomGenerator(baseString: sentence, tables: keyItems, generatorName: generatorName)
+            } catch {}
         }
     }
     
@@ -503,14 +482,13 @@ func getGenerator(filePath: String?, generatorName: String) -> RandomGenerator? 
 }
 
 
-let resourceFileName = "Sheet 1-Adventure Generator"
-let generatorName = ""
+let resourceFileName = "CSC690Generators-Tavern"
 let debug = false // Swap this to determine if the file is printed to json or generator is tested
 
 // get the file path for the file "test.json" in the playground bundle
 let filePath = Bundle.main.path(forResource: resourceFileName, ofType: "csv")
 
-if var generator = getGenerator(filePath: filePath, generatorName: generatorName) {
+if var generator = getGenerator(filePath: filePath) {
     
     if debug {
         

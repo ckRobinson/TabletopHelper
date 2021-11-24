@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CSC690_SwiftUI.xcodeproj">
+      location = "group:RandomGenerator.playground">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/cameron/Documents/Programming/Swift/CSC690_Term_Project/CSC690_SwiftUI/CSC690_SwiftUI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
