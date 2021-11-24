@@ -82,7 +82,7 @@ struct NameGeneratorSheetView: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct NameGeneratorSheetView_Previews: PreviewProvider {
     static var previews: some View {
         NameGeneratorSheetView(generatorTitle: "TEST", generator: nil, dismissCallback: {} )
     }

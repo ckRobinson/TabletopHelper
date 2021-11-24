@@ -17,8 +17,8 @@
 		7E55CB6E274DA3CE00521822 /* RandomGeneratorFromTableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55CB6D274DA3CE00521822 /* RandomGeneratorFromTableSet.swift */; };
 		7E55CB72274DA67100521822 /* Name_Generator_List.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB71274DA67100521822 /* Name_Generator_List.csv */; };
 		7E55CB76274DBBEC00521822 /* random_generator_list.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E55CB75274DBBEC00521822 /* random_generator_list.csv */; };
-		7E55CB7C274DBED300521822 /* RandomGeneratorFromTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55CB7B274DBED300521822 /* RandomGeneratorFromTableView.swift */; };
-		7E55CB87274DD51600521822 /* RandomGeneratorSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55CB86274DD51600521822 /* RandomGeneratorSelectionView.swift */; };
+		7E55CB7C274DBED300521822 /* RandomGeneratorFromTable_SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55CB7B274DBED300521822 /* RandomGeneratorFromTable_SheetView.swift */; };
+		7E55CB87274DD51600521822 /* RandomGeneratorSelection_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55CB86274DD51600521822 /* RandomGeneratorSelection_View.swift */; };
 		7E59250D27273AA400576D4D /* CSC690_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59250C27273AA400576D4D /* CSC690_SwiftUIApp.swift */; };
 		7E59250F27273AA400576D4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59250E27273AA400576D4D /* ContentView.swift */; };
 		7E59251127273AA500576D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E59251027273AA500576D4D /* Assets.xcassets */; };
@@ -26,11 +26,11 @@
 		7E59251F27273AA500576D4D /* CSC690_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59251E27273AA500576D4D /* CSC690_SwiftUITests.swift */; };
 		7E59252A27273AA500576D4D /* CSC690_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59252927273AA500576D4D /* CSC690_SwiftUIUITests.swift */; };
 		7E59253B27273C3200576D4D /* FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59253A27273C3200576D4D /* FloatingMenu.swift */; };
-		7EDC017827277F3200CCF743 /* RollResultPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC017727277F3200CCF743 /* RollResultPopup.swift */; };
+		7EDC017827277F3200CCF743 /* RollResult_PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC017727277F3200CCF743 /* RollResult_PopupView.swift */; };
 		7EE28AE8273DE372006B818F /* sylvari_male.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE28AE7273DE372006B818F /* sylvari_male.json */; };
-		7EE28AEC273DF27E006B818F /* NameGeneratorSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28AEB273DF27E006B818F /* NameGeneratorSelection.swift */; };
-		7EE28AF0273DF5BD006B818F /* GeneratorTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28AEF273DF5BD006B818F /* GeneratorTypeSelectionView.swift */; };
-		7EE28AF4273EF205006B818F /* NameGeneratorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28AF3273EF205006B818F /* NameGeneratorSheetView.swift */; };
+		7EE28AEC273DF27E006B818F /* NameGeneratorSelection_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28AEB273DF27E006B818F /* NameGeneratorSelection_View.swift */; };
+		7EE28AF0273DF5BD006B818F /* GeneratorTypeSelection_MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28AEF273DF5BD006B818F /* GeneratorTypeSelection_MainView.swift */; };
+		7EE28AF4273EF205006B818F /* NameGeneratorSheet_SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28AF3273EF205006B818F /* NameGeneratorSheet_SheetView.swift */; };
 		7EE28B0C273F525C006B818F /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE28B0B273F525C006B818F /* Popup.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,8 +75,8 @@
 		7E55CB6D274DA3CE00521822 /* RandomGeneratorFromTableSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorFromTableSet.swift; sourceTree = "<group>"; };
 		7E55CB71274DA67100521822 /* Name_Generator_List.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Name_Generator_List.csv; sourceTree = "<group>"; };
 		7E55CB75274DBBEC00521822 /* random_generator_list.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = random_generator_list.csv; sourceTree = "<group>"; };
-		7E55CB7B274DBED300521822 /* RandomGeneratorFromTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorFromTableView.swift; sourceTree = "<group>"; };
-		7E55CB86274DD51600521822 /* RandomGeneratorSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorSelectionView.swift; sourceTree = "<group>"; };
+		7E55CB7B274DBED300521822 /* RandomGeneratorFromTable_SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorFromTable_SheetView.swift; sourceTree = "<group>"; };
+		7E55CB86274DD51600521822 /* RandomGeneratorSelection_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorSelection_View.swift; sourceTree = "<group>"; };
 		7E59250927273AA400576D4D /* CSC690_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC690_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E59250C27273AA400576D4D /* CSC690_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC690_SwiftUIApp.swift; sourceTree = "<group>"; };
 		7E59250E27273AA400576D4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,11 +90,11 @@
 		7E59252927273AA500576D4D /* CSC690_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC690_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		7E59252B27273AA500576D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E59253A27273C3200576D4D /* FloatingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenu.swift; sourceTree = "<group>"; };
-		7EDC017727277F3200CCF743 /* RollResultPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollResultPopup.swift; sourceTree = "<group>"; };
+		7EDC017727277F3200CCF743 /* RollResult_PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollResult_PopupView.swift; sourceTree = "<group>"; };
 		7EE28AE7273DE372006B818F /* sylvari_male.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sylvari_male.json; sourceTree = "<group>"; };
-		7EE28AEB273DF27E006B818F /* NameGeneratorSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGeneratorSelection.swift; sourceTree = "<group>"; };
-		7EE28AEF273DF5BD006B818F /* GeneratorTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorTypeSelectionView.swift; sourceTree = "<group>"; };
-		7EE28AF3273EF205006B818F /* NameGeneratorSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGeneratorSheetView.swift; sourceTree = "<group>"; };
+		7EE28AEB273DF27E006B818F /* NameGeneratorSelection_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGeneratorSelection_View.swift; sourceTree = "<group>"; };
+		7EE28AEF273DF5BD006B818F /* GeneratorTypeSelection_MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorTypeSelection_MainView.swift; sourceTree = "<group>"; };
+		7EE28AF3273EF205006B818F /* NameGeneratorSheet_SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameGeneratorSheet_SheetView.swift; sourceTree = "<group>"; };
 		7EE28B0B273F525C006B818F /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,12 +229,12 @@
 			children = (
 				7EE28B0B273F525C006B818F /* Popup.swift */,
 				7E59253A27273C3200576D4D /* FloatingMenu.swift */,
-				7EDC017727277F3200CCF743 /* RollResultPopup.swift */,
-				7EE28AEB273DF27E006B818F /* NameGeneratorSelection.swift */,
-				7EE28AEF273DF5BD006B818F /* GeneratorTypeSelectionView.swift */,
-				7EE28AF3273EF205006B818F /* NameGeneratorSheetView.swift */,
-				7E55CB7B274DBED300521822 /* RandomGeneratorFromTableView.swift */,
-				7E55CB86274DD51600521822 /* RandomGeneratorSelectionView.swift */,
+				7EDC017727277F3200CCF743 /* RollResult_PopupView.swift */,
+				7EE28AEF273DF5BD006B818F /* GeneratorTypeSelection_MainView.swift */,
+				7EE28AF3273EF205006B818F /* NameGeneratorSheet_SheetView.swift */,
+				7E55CB7B274DBED300521822 /* RandomGeneratorFromTable_SheetView.swift */,
+				7EE28AEB273DF27E006B818F /* NameGeneratorSelection_View.swift */,
+				7E55CB86274DD51600521822 /* RandomGeneratorSelection_View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,16 +379,16 @@
 			files = (
 				7E55CB6E274DA3CE00521822 /* RandomGeneratorFromTableSet.swift in Sources */,
 				7EE28B0C273F525C006B818F /* Popup.swift in Sources */,
-				7EDC017827277F3200CCF743 /* RollResultPopup.swift in Sources */,
+				7EDC017827277F3200CCF743 /* RollResult_PopupView.swift in Sources */,
 				7E59250F27273AA400576D4D /* ContentView.swift in Sources */,
-				7EE28AF4273EF205006B818F /* NameGeneratorSheetView.swift in Sources */,
-				7EE28AF0273DF5BD006B818F /* GeneratorTypeSelectionView.swift in Sources */,
-				7E55CB87274DD51600521822 /* RandomGeneratorSelectionView.swift in Sources */,
+				7EE28AF4273EF205006B818F /* NameGeneratorSheet_SheetView.swift in Sources */,
+				7EE28AF0273DF5BD006B818F /* GeneratorTypeSelection_MainView.swift in Sources */,
+				7E55CB87274DD51600521822 /* RandomGeneratorSelection_View.swift in Sources */,
 				7E59253B27273C3200576D4D /* FloatingMenu.swift in Sources */,
 				7E59250D27273AA400576D4D /* CSC690_SwiftUIApp.swift in Sources */,
 				7E1CA2E4273C577B007C19B5 /* MarkovChain.swift in Sources */,
-				7EE28AEC273DF27E006B818F /* NameGeneratorSelection.swift in Sources */,
-				7E55CB7C274DBED300521822 /* RandomGeneratorFromTableView.swift in Sources */,
+				7EE28AEC273DF27E006B818F /* NameGeneratorSelection_View.swift in Sources */,
+				7E55CB7C274DBED300521822 /* RandomGeneratorFromTable_SheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
